@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #111111;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*Font*/
+@font-face {
+  font-family: "Njnaruto";
+  src: url("../fonts/njnaruto.ttf") format("woff");
+  font-display: swap;
+}
+
+/*styling the header*/
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #343239;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-page {
+  font-family: "Njnaruto", sans-serif;
+  font-weight: 100;
+  color: #fbf9fb;
+}
+
+.header-logo {
+  display: flex;
+  text-decoration: none;
+}
+.header-logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbf9fb;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  background-color: #f03c33c5;
+}
+/*styling the main title*/
+
+h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+/*styling the filters*/
+
+.filters-rows::after,
+.library-rows::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.filters-filter {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.filters-filter h4 {
+  color: whitesmoke;
+}
+
+/*styling the library*/
+
+.library {
+  padding: 1rem;
+}
+.library-anime {
+  width: 25%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
+}
+.library-anime > img {
+  object-fit: cover;
+  height: auto;
+  width: 75%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/*library hover*/
+.library-anime-hover {
+  position: absolute;
+  top: 0;
+  left: 12.5%;
+  width: 75%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: transform 0.5s;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+.library-anime-hover img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+
+  margin: 0 auto;
+}
+.library-anime-hover p {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.library-anime:hover .library-anime-hover {
+  transform: scale(1);
+}
+/* styling the footer */
+footer {
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  clear: both;
+}
+
+.footer-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h4 {
+  color: #fff;
+  font-weight: 200;
+  border-bottom: 3px solid #f03d33;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-content {
+  color: #ccc;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
