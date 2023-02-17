@@ -308,6 +308,7 @@ nav a:hover {
 /*hover with a border red in transition*/
 .week-anime-card:hover {
   color: yellow;
+  background-color: #f03d33;
   /*make bigger the font*/
   font-size: 1.1rem;
 }
@@ -320,6 +321,7 @@ nav a:hover {
 .week-anime-image img {
   width: 80%;
   display: block;
+  margin: 0 auto;
   border-radius: 5px;
   margin-bottom: 2px;
 }
