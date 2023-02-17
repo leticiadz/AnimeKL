@@ -80,10 +80,6 @@ h1 {
 }
 
 /*styling the library*/
-
-.library {
-  padding: 1rem;
-}
 .library-anime {
   width: 25%;
   float: left;
