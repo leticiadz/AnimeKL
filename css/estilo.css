@@ -161,6 +161,7 @@ nav a:hover {
 
 /*Carrousel*/
 .carrousel-image {
+  height: 400px;
   width: 75%;
 }
 
