@@ -161,52 +161,31 @@ nav a:hover {
 
 /*Carrousel*/
 .carrousel-image {
-  height: 400px;
-  width: 75%;
+  width: 80%;
+  object-fit: cover;
 }
 
 .carrousel-slider {
+  height: auto;
   width: 50%;
-  height: 400px;
   overflow: hidden;
-  margin: 1em auto;
+  margin: 0 auto;
 }
 
 .carrousel-slider ul {
   display: flex;
-  animation: cambio 10s infinite alternate linear;
+  animation: cambio 20s infinite linear;
   width: 400%;
 }
 
 .carrousel-slider li {
-  width: 100%;
+  width: 75%;
   list-style: none;
 }
 
 @keyframes cambio {
   0% {
-    margin-left: 0;
-  }
-  20% {
-    margin-left: 0;
-  }
-
-  25% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -100%;
-  }
-
-  50% {
-    margin-left: -200%;
-  }
-  70% {
-    margin-left: -200%;
-  }
-
-  75% {
-    margin-left: -300%;
+    margin-left: 0%;
   }
   100% {
     margin-left: -300%;
@@ -426,4 +405,295 @@ footer {
   font-size: 24px;
   margin: 20px 0 0 0;
   color: #9e9797;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .carrousel-title {
+    font-size: 1.6rem;
+  }
+  .carrousel-slider {
+    width: 100%;
+  }
+
+  .lepisode-container {
+    width: 100%;
+  }
+  .lepisode-title {
+    text-align: center;
+  }
+  .lepisode-anime-image {
+    width: 50%;
+  }
+  .week-container {
+    width: 100%;
+  }
+
+  .week-title {
+    text-align: center;
+  }
+
+  .week-anime-card:hover {
+    font-size: 1rem;
+  }
+
+  .news-title {
+    text-align: center;
+  }
+  .news-item {
+    width: 100%;
+  }
+
+  .new-anime-title {
+    text-align: center;
+  }
+  .new-anime-item {
+    width: 50%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .carrousel-title {
+    font-size: 1.6rem;
+  }
+  .carrousel-slider {
+    width: 100%;
+  }
+
+  .lepisode-container {
+    width: 100%;
+  }
+  .lepisode-title {
+    text-align: center;
+  }
+  .lepisode-anime-image {
+    width: 50%;
+  }
+  .week-container {
+    width: 100%;
+  }
+
+  .week-title {
+    text-align: center;
+  }
+
+  .news-title {
+    text-align: center;
+  }
+
+  .news-item {
+    width: 100%;
+  }
+
+  .new-anime-title {
+    text-align: center;
+  }
+  .new-anime-item {
+    width: 50%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .carrousel-title {
+    font-size: 1.6rem;
+  }
+  .carrousel-slider {
+    width: 100%;
+  }
+
+  .lepisode-container {
+    width: 100%;
+  }
+  .lepisode-title {
+    text-align: center;
+  }
+  .lepisode-anime-image {
+    width: 33.33%;
+  }
+  .week-container {
+    width: 100%;
+  }
+
+  .week-title {
+    text-align: center;
+  }
+
+  .news-title {
+    text-align: center;
+  }
+
+  .news-item {
+    width: 50%;
+  }
+
+  .new-anime {
+    clear: both;
+  }
+  .new-anime-item {
+    width: 33.33%;
+  }
+
+  .new-anime-title {
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+  .carrousel-title,
+  .news-title,
+  .new-anime-title,
+  .week-title,
+  .lepisode-title {
+    font-size: 1.8rem;
+  }
+
+  .lepisode-container {
+    width: 66.66%;
+  }
+  .lepisode-title {
+    text-align: center;
+  }
+  .lepisode-anime-image {
+    width: 33.33%;
+  }
+  .week-container {
+    width: 33.33%;
+  }
+  .week-anime-card:hover {
+    font-size: 1rem;
+  }
+
+  .news-item {
+    width: 33.33%;
+  }
+
+  .new-anime {
+    clear: both;
+  }
+  .new-anime-item {
+    width: 33.33%;
+  }
+
+  .lepisode-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .news-item p {
+    font-size: 1.2rem;
+  }
+
+  .new-anime-paragraph {
+    font-size: 1.2rem;
+  }
+  .footer-content {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+  .carrousel-title,
+  .news-title,
+  .new-anime-title,
+  .week-title,
+  .lepisode-title {
+    font-size: 1.8rem;
+  }
+
+  .week-anime-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .lepisode-container {
+    width: 66.66%;
+  }
+ 
+  .lepisode-anime-image {
+    width: 33.33%;
+  }
+  .week-container {
+    width: 33.33%;
+  }
+
+  .news-item {
+    width: 25%;
+  }
+
+  .new-anime {
+    clear: both;
+  }
+  .new-anime-item {
+    width: 20%;
+  }
+
+  .lepisode-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .news-item p {
+    font-size: 1.2rem;
+  }
+
+  .new-anime-paragraph {
+    font-size: 1.2rem;
+  }
+  .footer-content {
+    font-size: 1.3rem;
+  }
 }
