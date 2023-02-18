@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #343239e0;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*Font*/
+@font-face {
+  font-family: "Njnaruto";
+  src: url("../fonts/njnaruto.ttf") format("woff");
+  font-display: swap;
+}
+
+/*Header*/
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #343239;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-page {
+  font-family: "Njnaruto", sans-serif;
+  font-weight: 100;
+  color: #fbf9fb;
+}
+
+.header-logo {
+  display: flex;
+  text-decoration: none;
+}
+.header-logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbf9fb;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  background-color: #f03c33c5;
+}
+
+/*Description container*/
+.description-row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.description-container {
+  width: 75%;
+  background-color: #eeeeee;
+  margin: 30px auto 25px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.description-image {
+  width: 20%;
+  float: left;
+  padding-right: 25px;
+}
+
+.description-image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.description-text {
+  width: 80%;
+  float: left;
+}
+
+.description-text h2 {
+  font-weight: 700;
+}
+
+.description-text p {
+  line-height: 1.5;
+}
+
+.description-text ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2;
+}
+
+.description-text span {
+  color: #1d95cf;
+}
+
+.description-text .description-status {
+  background-color: #db3541;
+  font-weight: 500;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+}
+
+/*Chapters*/
+.chapters-cards::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.chapters-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Begin chapters cards*/
+.chapters-image {
+  width: 25%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  float: left;
+}
+
+.chapters-image > img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  border-radius: 10px;
+}
+
+.chapters-hover {
+  position: absolute;
+  top: 0;
+  left: 15%;
+  display: block;
+  width: 70%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: scale(0);
+  transition: transform 0.5s;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+}
+
+.chapters-hover img {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25%;
+}
+
+.chapters-hover p {
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.chapters-image:hover .chapters-hover {
+  transform: scale(1);
+}
+
+.chapters-container h2 {
+  color: whitesmoke;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 5px;
+  padding-left: 35px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.chapters-container h2::after {
+  background: #db3541;
+  position: absolute;
+  left: 0;
+  top: -6px;
+  height: 32px;
+  width: 5px;
+  content: "";
+}
+
+/*Comments*/
+.comments {
+  background-color: #db3541;
+  height: 500px;
+}
