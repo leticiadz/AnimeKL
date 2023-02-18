@@ -168,3 +168,126 @@ footer {
   margin: 20px 0 0 0;
   color: #9e9797;
 }
+
+/*media queries*/
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .library-anime {
+    width: 100%;
+  }
+
+  .filters-filter {
+    width: 50%;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .library-anime {
+    width: 33.33%;
+  }
+
+  .filters-filter {
+    width: 33.33%;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .library-anime {
+    width: 25%;
+  }
+
+  .filters-filter {
+    width: 33.33%;
+  }
+
+  .footer-content {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .library-anime {
+    width: 20%;
+  }
+
+  .filters-filter {
+    width: 33.33%;
+  }
+
+  .footer-content {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  nav a {
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .library-anime {
+    width: 20%;
+  }
+
+  .filters-filter {
+    width: 33.33%;
+  }
+
+  .footer-content {
+    font-size: 1.2rem;
+  }
+}
