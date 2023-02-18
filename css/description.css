@@ -125,7 +125,7 @@ nav a:hover {
 
 /*Begin chapters cards*/
 .chapters-item {
-  width: 100%;
+  width: 33.33%;
   display: block;
   overflow: hidden;
   position: relative;
@@ -276,22 +276,22 @@ footer {
   button {
     margin-bottom: 5px;
   }
-
+  .chapters-item {
+    width: 100%;
+  }
+  .chapters-item > img {
+    width: 100%;
+  }
   .chapters-hover {
     width: 100%;
+    left: 0;
   }
 
   .chapters-hover p {
-    font-size: 10px;
+    font-size: 1.6rem;
   }
-
-  .chapters-item img {
-    width: 100%;
-  }
-
-  .chapters-item {
-    width: 100%;
-    padding: 5px;
+  .chapters-hover img {
+    width: 20%;
   }
 
   .comments {
@@ -346,7 +346,24 @@ footer {
   button {
     margin-bottom: 5px;
   }
+  .chapters-item {
+    width: 100%;
+  }
+  .chapters-item > img {
+    width: 100%;
+  }
+  .chapters-hover {
+    width: 100%;
+    left: 0;
+  }
 
+  .chapters-hover p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  .chapters-hover img {
+    width: 20%;
+  }
   .comments {
     width: 100%;
   }
@@ -382,6 +399,27 @@ footer {
     width: 50%;
   }
 
+  .chapters-item {
+    width: 50%;
+    padding: 0 1rem;
+  }
+
+  .chapters-item > img {
+    width: 100%;
+  }
+  .chapters-hover {
+    width: 87.5%;
+    left: 6%;
+  }
+
+  .chapters-hover p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .chapters-hover img {
+    width: 20%;
+  }
+
   .comments h2 {
     text-align: center;
   }
@@ -402,6 +440,26 @@ footer {
 
   .description-text {
     width: 66.66%;
+  }
+  .chapters-item {
+    width: 50%;
+    padding: 0 1rem;
+  }
+
+  .chapters-item > img {
+    width: 100%;
+  }
+  .chapters-hover {
+    width: 87.5%;
+    left: 6%;
+  }
+
+  .chapters-hover p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .chapters-hover img {
+    width: 20%;
   }
 
   .comments h2 {
@@ -424,6 +482,26 @@ footer {
 
   .description-text {
     width: 66.66%;
+  }
+  .chapters-item {
+    width: 33.33%;
+    padding: 0 1rem;
+  }
+
+  .chapters-item > img {
+    width: 100%;
+  }
+  .chapters-hover {
+    width: 87.5%;
+    left: 6%;
+  }
+
+  .chapters-hover p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  .chapters-hover img {
+    width: 20%;
   }
 
   .footer-content {
