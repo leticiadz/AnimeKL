@@ -120,13 +120,13 @@ nav a:hover {
 
 .chapters-container {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /*Begin chapters cards*/
-.chapters-image {
-  width: 25%;
+.chapters-item {
+  width: 100%;
+  display: block;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -134,36 +134,34 @@ nav a:hover {
   float: left;
 }
 
-.chapters-image > img {
+.chapters-item > img {
   width: 70%;
   height: auto;
   object-fit: cover;
   display: block;
   margin: 0 auto;
-  position: relative;
   border-radius: 10px;
+}
+
+.chapters-hover img {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .chapters-hover {
   position: absolute;
   top: 0;
-  left: 15%;
+  left: 14.5%;
   display: block;
-  width: 70%;
+  width: 70.5%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   transform: scale(0);
   transition: transform 0.5s;
   transition: all 0.5s ease;
   border-radius: 10px;
-}
-
-.chapters-hover img {
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 25%;
 }
 
 .chapters-hover p {
@@ -173,7 +171,7 @@ nav a:hover {
   margin: 0;
 }
 
-.chapters-image:hover .chapters-hover {
+.chapters-item:hover .chapters-hover {
   transform: scale(1);
 }
 
@@ -201,4 +199,234 @@ nav a:hover {
 .comments {
   background-color: #db3541;
   height: 500px;
+}
+
+/*Footer*/
+footer {
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+  clear: both;
+}
+
+.footer-container {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-content h4 {
+  color: #fff;
+  font-weight: 200;
+  border-bottom: 3px solid #f03d33;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-content {
+  color: #ccc;
+}
+
+.footer-title {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px 0 0 0;
+  color: #9e9797;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .description-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .description-text {
+    width: 100%;
+  }
+
+  .description-text h2 {
+    text-align: center;
+  }
+
+  .description-text p {
+    text-align: justify;
+  }
+
+  button {
+    margin-bottom: 5px;
+  }
+
+  .chapters-hover {
+    width: 100%;
+  }
+
+  .chapters-hover p {
+    font-size: 10px;
+  }
+
+  .chapters-item img {
+    width: 100%;
+  }
+
+  .chapters-item {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .comments {
+    width: 100%;
+  }
+
+  .comments h2 {
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    width: 100%;
+  }
+  nav a {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    display: block;
+  }
+
+  .description-image {
+    width: 100%;
+    padding: 0;
+  }
+
+  .description-text {
+    width: 100%;
+  }
+
+  .description-text h2 {
+    text-align: center;
+  }
+
+  .description-text p {
+    text-align: justify;
+  }
+
+  button {
+    margin-bottom: 5px;
+  }
+
+  .comments {
+    width: 100%;
+  }
+
+  .comments h2 {
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-content {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
+    font-size: 20px;
+  }
+
+  nav a {
+    font-size: 23px;
+  }
+
+  .description-image {
+    width: 50%;
+  }
+
+  .description-text {
+    width: 50%;
+  }
+
+  .comments h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  html {
+    font-size: 25px;
+  }
+
+  nav a {
+    font-size: 25px;
+  }
+
+  .description-image {
+    width: 33.33%;
+  }
+
+  .description-text {
+    width: 66.66%;
+  }
+
+  .comments h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  html {
+    font-size: 19px;
+  }
+
+  nav a {
+    font-size: 25px;
+  }
+
+  .description-image {
+    width: 33.33%;
+  }
+
+  .description-text {
+    width: 66.66%;
+  }
+
+  .footer-content {
+    font-size: 22px;
+  }
 }
