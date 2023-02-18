@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #111111;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*Font*/
+@font-face {
+  font-family: "Njnaruto";
+  src: url("../fonts/njnaruto.ttf") format("woff");
+  font-display: swap;
+}
+
+/*styling the header*/
+header {
+  display: flex;
+  min-height: 70px;
+  background-color: #343239;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-page {
+  font-family: "Njnaruto", sans-serif;
+  font-weight: 100;
+  color: #fbf9fb;
+}
+
+.header-logo {
+  display: flex;
+  text-decoration: none;
+}
+.header-logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fbf9fb;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  background-color: #f03c33c5;
+}
+
+/*Calendar*/
+body {
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.calender {
+  max-width: 80%;
+  font-weight: bold;
+  color: black;
+  margin: 35px auto;
+}
+
+.month {
+  text-align: center;
+  background: whitesmoke;
+  font-size: 80px;
+  letter-spacing: 1px;
+  color: black;
+  border: 3px solid #f03d33;
+}
+
+table,
+th,
+td {
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+  font-size: 27px;
+  border-collapse: collapse;
+  border: 5px solid black;
+}
+
+tr,
+th,
+td {
+  padding: 15px;
+}
+
+th {
+  background: #343239;
+  color: whitesmoke;
+}
+
+td {
+  background: #f03d33;
+  color: black;
+}
+
+td:hover {
+  background: #e3e1e3;
+  cursor: pointer;
+}
