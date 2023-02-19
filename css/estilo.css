@@ -107,6 +107,7 @@ html {
   margin: 30px auto;
   cursor: pointer;
 }
+
 .modal-left button:hover {
   background-color: #f03c33c5;
   color: black;
@@ -130,8 +131,7 @@ html {
 
 .modal-right h2 {
   text-align: center;
-  margin: 10%;
-  padding: 10px;
+  margin: 30%;
   border-top: 1px solid rgba(15, 15, 15, 0.44);
   border-bottom: 1px solid rgba(15, 15, 15, 0.44);
 }
