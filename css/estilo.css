@@ -36,11 +36,9 @@ html {
   position: relative;
   border: thick double #f03d33;
   border-radius: 1rem;
-  padding: 2rem;
-  width: 70%;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  text-align: left;
   overflow: hidden;
   background-color: #fff;
 }
@@ -107,6 +105,11 @@ html {
   padding: 10px;
   display: block;
   margin: 30px auto;
+  cursor: pointer;
+}
+.modal-left button:hover {
+  background-color: #f03c33c5;
+  color: black;
 }
 
 .modal-left .forget-password {
@@ -545,6 +548,25 @@ footer {
     display: block;
   }
 
+  .modal-close {
+    position: relative;
+    margin: 0 0 10px auto;
+    padding: 0;
+  }
+  .modal-item {
+    width: 100%;
+  }
+  .modal-left button {
+    width: 80%;
+  }
+  .modal-item .forget-password {
+    width: 100%;
+  }
+  .modal-right h2 {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
   .carrousel-title {
     font-size: 1.6rem;
   }
@@ -615,7 +637,23 @@ footer {
     text-align: center;
     display: block;
   }
-
+  .modal-close {
+    position: relative;
+    margin: 0 0 10px auto;
+    padding: 0;
+  }
+  .modal-item {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+  .modal-left button {
+    width: 80%;
+    font-size: 1.5rem;
+  }
+  .modal-item .forget-password {
+    width: 100%;
+    font-size: 1.2rem;
+  }
   .carrousel-title {
     font-size: 1.6rem;
   }
@@ -675,6 +713,19 @@ footer {
     width: 100%;
   }
 
+  .modal-item {
+    width: 50%;
+  }
+  .modal-left button {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .modal-item .forget-password {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
   .lepisode-container {
     width: 100%;
   }
@@ -724,6 +775,19 @@ footer {
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
   nav a {
     font-size: 1.5rem;
+  }
+
+  .modal-item {
+    width: 50%;
+  }
+  .modal-left button {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .modal-item .forget-password {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
   }
   .carrousel-title,
   .news-title,
@@ -788,6 +852,18 @@ footer {
     font-size: 1.8rem;
   }
 
+  .modal-item {
+    width: 50%;
+  }
+  .modal-left button {
+    width: 80%;
+    margin: 15px auto;
+  }
+  .modal-item .forget-password {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
+  }
   .week-anime-paragraph {
     font-size: 1.2rem;
   }
