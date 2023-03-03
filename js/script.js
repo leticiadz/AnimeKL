@@ -1,71 +1,55 @@
+// Creacion de variables para guardar la informacion del select del html de bilbioteca
 const generoSelect = document.getElementById("genero");
 const fechaSelect = document.getElementById("fecha");
 const emisionSelect = document.getElementById("emision");
 const imagenes = document.querySelectorAll(".imagen");
 
+// ejecuta la funcion de filtrado cuando hay un cambio en el select de bilioteca
 generoSelect.addEventListener("change", filtrarImagenes);
 fechaSelect.addEventListener("change", filtrarImagenes);
-emisionSelect.addEventListener("change",filtrarImagenes);
-var x= window.location.search;
+emisionSelect.addEventListener("change", filtrarImagenes);
 
-function Accion(){
-  if(x != null){
-    var urlparaments = new URLSearchParams(x)
-    const genero  =urlparaments.get("categoria");
-    
+//Desde la linea  se utiliza para mandar a llamar un variable
+var x = window.location.search;
+//-----------------------------------------------------------------
+
+// funcion para hacer funcionar el menu de hamburguesa
+function Accion() {
+  if (x != null) {
+    var urlparaments = new URLSearchParams(x);
+    const genero = urlparaments.get("categoria");
+
     for (let index = 0; index < generoSelect.options.length; index++) {
-      var cate = generoSelect.options[index]
-      console.log(cate.value.toLowerCase() )
-      console.log(genero.toLowerCase())
-      console.log(index)
-      
-      console.log(genero.toLowerCase() === cate.value.toLowerCase())
-      if(genero.toLowerCase() === cate.value.toLowerCase()) {
-        generoSelect.options.selectedIndex=index
-        filtrarImagenes()
+      var cate = generoSelect.options[index];
+
+      if (genero.toLowerCase() === cate.value.toLowerCase()) {
+        generoSelect.options.selectedIndex = index;
+        filtrarImagenes();
       }
     }
-    
-    }
+  }
 }
-Accion()
+Accion();
 
-function emision(){
-  if(x != null){
-    var urlparaments = new URLSearchParams(x)
-    const emision  =urlparaments.get("categoria1");
-    
-    for (let index = 0; index < emisionSelect.options.length; index++) {
-      var cate = emisionSelect.options[index]
-      console.log(cate.value.toLowerCase() )
-      console.log(genero.toLowerCase())
-      console.log(index)
-      
-      console.log(genero.toLowerCase() === cate.value.toLowerCase())
-      if(emision.toLowerCase() === cate.value.toLowerCase()) {
-        emisionSelect.options.selectedIndex=index
-        filtrarImagenes()
-      }
+// funcion para hacer funcionar el Filtro de Anime por medio del Select
+function filtrarImagenes() {
+  const genero = generoSelect.value;
+  const fecha = fechaSelect.value;
+  const emision = emisionSelect.value;
+
+  for (let i = 0; i < imagenes.length; i++) {
+    const imagen = imagenes[i];
+    const imagenGenero =
+      imagen.classList.contains(genero) || genero === "todos";
+    const imagenFecha =
+      imagen.getAttribute("data-fecha") === fecha || fecha === "todos";
+    const imagenemision =
+      imagen.getAttribute("data-emision") === emision || emision === "todos";
+
+    if (imagenGenero && imagenFecha && imagenemision) {
+      imagen.removeAttribute("hidden");
+    } else {
+      imagen.setAttribute("hidden", true);
     }
-    
-    }
-}
-
-function filtrarImagenes(){
-    const genero = generoSelect.value;
-    const fecha = fechaSelect.value;
-    const emision = emisionSelect.value;
-
-    for (let i = 0; i < imagenes.length; i++) {
-        const imagen = imagenes[i];
-        const imagenGenero = imagen.classList.contains(genero) || genero === "todos";
-        const imagenFecha = imagen.getAttribute("data-fecha") === fecha || fecha === "todos";
-        const imagenemision= imagen.getAttribute("data-emision")=== emision || emision === "todos";
-        
-        if (imagenGenero && imagenFecha && imagenemision) {
-          imagen.removeAttribute("hidden");
-        } else {
-          imagen.setAttribute("hidden", true);
-        }
-      }
+  }
 }
