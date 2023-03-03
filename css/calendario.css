@@ -37,10 +37,12 @@ header {
   display: flex;
   text-decoration: none;
 }
+
 .header-logo img {
   width: 65px;
   height: 65px;
   margin-right: 5px;
+  margin-top: 13px;
 }
 
 nav a {

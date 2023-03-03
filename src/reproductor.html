@@ -12,7 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
-
     <!--- font2: Nokora --->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,6 +30,8 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <!--CSS-->
     <link rel="stylesheet" href="../css/reproductor.css" />
+    <!--Boostrap-->
+    <link rel="stylesheet" href="../boostrap/css/bootstrap.min.css" />
   </head>
   <body>
     <!--Header-->
@@ -78,7 +79,7 @@
         <!--Buttons-->
         <div class="reproductor-buttons">
           <div class="reproductor-buttons-row">
-            <button class="reproductor-button-left">
+            <button type="button" class="btn btn-light reproductor-button-left">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -94,7 +95,10 @@
               </svg>
               Capítulo anterior
             </button>
-            <button class="reproductor-button-middle">
+            <button
+              type="button"
+              class="btn btn-light reproductor-button-middle"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -109,7 +113,10 @@
                 />
               </svg>
             </button>
-            <button class="reproductor-button-right">
+            <button
+              type="button"
+              class="btn btn-light reproductor-button-right"
+            >
               Capítulo siguiente
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +135,7 @@
           </div>
         </div>
 
-        <button class="reproductor-download">
+        <button type="button" class="btn btn-light reproductor-download">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="16"
@@ -172,5 +179,6 @@
       </div>
       <h2 class="footer-title">&copy; Derechos Reservados | Equipo 5</h2>
     </footer>
+    <script src="../boostrap/js/bootstrap.min.js"></script>
   </body>
 </html>

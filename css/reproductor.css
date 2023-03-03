@@ -41,6 +41,7 @@ header {
   width: 65px;
   height: 65px;
   margin-right: 5px;
+  margin-top: 13px;
 }
 
 nav a {
@@ -163,7 +164,7 @@ h1 {
 }
 
 .reproductor-download:hover {
-  background-color: #f03c33c5;
+  /*background-color: #f03c33c5;*/
   color: whitesmoke;
   font-weight: 600;
 }
