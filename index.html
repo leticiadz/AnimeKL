@@ -35,6 +35,9 @@
     <link rel="stylesheet" href="./css/estilo.css" />
   </head>
   <body>
+     <!--la Siguiente linea es para ejecutar JS-->
+     <script src="/AnimeKL/js/script.js"></script>
+
     <!--Header-->
     <header>
       <a class="header-logo" href="index.html">
@@ -65,7 +68,7 @@
       </article>
 
         <a class="nav-link" href="src/biblioteca.html">Animes</a>
-        <a class="nav-link" href="#en-emision">En emisión</a>
+        <a class="nav-link" href="src/biblioteca.html?categorias=emision">En emisión</a>
         <a class="nav-link" href="src/calendario.html">Calendario</a>
       </nav>
     </header>
@@ -74,13 +77,15 @@
     <input type="checkbox" class="off-canvas-btn" />
     <label class="off-canvas-burger"></label>
     <nav class="off-canvas-menu">
+      
       <div class="off-canvas-container">
-        <a href="src/biblioteca.html" class="off-canvas-link">Acción</a>
-        <a href="src/biblioteca.html" class="off-canvas-link">Aventuras</a>
-        <a href="src/biblioteca.html" class="off-canvas-link">Comedia</a>
-        <a href="src/biblioteca.html" class="off-canvas-link">Piratas</a>
-        <a href="src/biblioteca.html" class="off-canvas-link">Sobrenatural</a>
+        <a href="src/biblioteca.html?categoria=Accion"  class="off-canvas-link" id="Accion">Acción</a>
+        <a href="src/biblioteca.html?categoria=aventura" class="off-canvas-link" id="Aventuras">Aventuras</a>
+        <a href="src/biblioteca.html?categoria=Comedia" class="off-canvas-link" id="Comedia">Comedia</a>
+        <a href="src/biblioteca.html?categoria=Piratas" class="off-canvas-link" id="Piratas">Piratas</a>
+        <a href="src/biblioteca.html?categoria=Sobrenatural" class="off-canvas-link" id="Sobrenatural">Sobrenatural</a>
       </div>
+  
     </nav>
 
     <!--Carrousel-->

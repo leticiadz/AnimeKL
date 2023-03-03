@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <!--- CSS --->
     <link rel="stylesheet" href="../css/description.css" />
+
+   
   </head>
   <body>
     <!--Header-->
@@ -54,8 +56,8 @@
             <img src="../img/kimetsu-no-yaiba.jpg" alt="Kimetsu No Yaiba" />
           </div>
           <div class="description-text">
-            <h2>Kimetsu No Yaiba</h2>
-            <p class="description-paragraph">
+            <h2 id="titulo">Kimetsu No Yaiba</h2>
+            <p class="description-paragraph" id="descripcion">
               Estamos en la era Taisho de Japón. Tanjiro, un joven que se gana
               la vida vendiendo carbón, descubre un día que su familia ha sido
               asesinada por un demonio. Para empeorar las cosas, su hermana
@@ -66,22 +68,22 @@
               masacró a su familia.
             </p>
             <ul>
-              <li>▪️ <b>Tipo:</b> <span>Serie</span></li>
+              <li>▪️ <b>Tipo:</b> <span id="tipo">Serie</span></li>
               <li>
                 ▪️ <b>Género:</b>
-                <span>Sobrenatural, Shounen, Historico, Demonios, Acción</span>
+                <span id="genero">Sobrenatural, Shounen, Historico, Demonios, Acción</span>
               </li>
-              <li>▪️ <b>Studios:</b> <span>ufotable</span></li>
-              <li>▪️ <b>Demografía:</b> <span>Shounen</span></li>
-              <li>▪️ <b>Idiomas:</b> <span>Japonés</span></li>
-              <li>▪️ <b>Episodios:</b> <span>26</span></li>
-              <li>▪️ <b>Duración:</b> <span>Desconocido</span></li>
-              <li>
-                ▪️ <b>Emitido:</b> <span>Abr 6 de 2019 a Sep 28 de 2019</span>
+              <li >▪️ <b>Studios:</b> <span id="estudio">ufotable</span></li>
+              <li >▪️ <b>Demografía:</b> <span id="demografia">Shounen</span></li>
+              <li >▪️ <b>Idiomas:</b> <span id="idioma">Japonés</span></li>
+              <li >▪️ <b>Episodios:</b> <span id="episodios">26</span></li>
+              <li >▪️ <b>Duración:</b> <span id="duracion">Desconocido</span></li>
+              <li >
+                ▪️ <b>Emitido:</b> <span id="emitido"> Abr 6 de 2019 a Sep 28 de 2019</span>
               </li>
-              <li>
+              <li >
                 ▪️ <b>Estado:</b>
-                <span class="description-status">Concluido</span>
+                <span class="description-status" id="estado">Concluido</span>
               </li>
             </ul>
             <button>Me gusta 👍</button> <button>Ver ahora</button>
@@ -271,5 +273,8 @@
       </div>
       <h2 class="footer-title">&copy; Derechos Reservados | Equipo 5</h2>
     </footer>
+    
+    <script src="../js/descripcion.js">
+    </script>
   </body>
 </html>

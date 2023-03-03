@@ -30,8 +30,11 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <!--- CSS --->
     <link rel="stylesheet" href="../css/biblioteca.css" />
+
+   
   </head>
   <body>
+    
     <!--Header-->
     <header>
       <a class="header-logo" href="../index.html">
@@ -53,36 +56,40 @@
         <div class="filters-rows">
           <div class="filters-filter">
             <h4>Listado</h4>
-            <select name="" id="">
-              <option value=""><b>Género</b></option>
-              <option value="">Aventura</option>
-              <option value="">Accion</option>
-              <option value="">Comedia</option>
-              <option value="">Misterio</option>
-              <option value="">Magia</option>
-                  
+            <label for="genero">Genero:</label>
+            <select id="genero">
+              <option value="todos">Todos</option>
+              <option value="accion">Accion</option>
+              <option value="aventura">Aventura</option>
+              <option value="comedia">Comedia</option>
+              <option value="piratas">Piratas</option>
+              <option value="sobrenatural">Sobrenatural</option>
+            
             </select>
           </div>
           <div class="filters-filter">
             <h4>Listado</h4>
-            <select name="" id="">
-              <option value=""><b>Año</b></option>
-              <option value="">2019</option>
-              <option value="">2020</option>
-              <option value="">2021</option>
-              <option value="">2022</option>
-              <option value="">2023</option>
-                  
+            <label for="fecha">Fecha:</label>
+            <select id="fecha">
+              <option value="todos">Todos</option>
+              <option value="2015">2015</option>
+              <option value="2016">2016</option>
+              <option value="2017">2017</option>
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+          
             </select>
           </div>
           <div class="filters-filter">
             <h4>Listado</h4>
-            <select name="" id="">
-              <option value=""><b>Estado</b></option>
-              <option value="">En emisión</option>
-              <option value="">Finalizado</option>
-              <option value="">Por estrenar</option>
-                  
+            <label for="emision">Estado</label>
+            <select id="emision">
+              <option value="todos">Todos</option>
+              <option value="emision">En emisión</option>
+              <option value="finalizado">Finalizado</option>
+              <option value="estreno">Por estrenar</option>
+          
             </select>
           </div>
           <!--- end items filters --->
@@ -90,11 +97,19 @@
         <!--- end filters rows --->
       </div>
       <!--- end filters --->
-
+      
       <div class="library">
-        <div class="library-rows">
-          <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+        <div class="library-rows" >
+          <a href="description.html?id=datealive" class="library-anime">
+            <img class="imagen accion" src="https://i.postimg.cc/wM5nJPHY/00-1.jpg"  alt="portada de anime" data-fecha="2015" data-emision="emision"  />
+            <div class="library-anime-hover">
+              <img src="../img/play-icono.png" alt="" />
+              <p>Kimetsu No Yaiba</p>
+            </div>
+          </a>
+
+          <a href="description.html?id=another" class="library-anime">
+            <img src="https://i.postimg.cc/QMwLr1Sw/1579978677-361405-1580222390-not-1.jpg" alt="portada de anime" data-genero="aventura" data-fecha="2016" data-emision="Finalizado" class="imagen aventura"/>
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -102,7 +117,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="https://i.postimg.cc/LX1c45bX/4e954b4dff8729bf4476d76d8185bce6.jpg" alt="portada de anime" data-genero="comedia" data-fecha="2017" data-emision="estreno" class="imagen comedia" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -110,15 +125,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
-            <div class="library-anime-hover">
-              <img src="../img/play-icono.png" alt="" />
-              <p>Kimetsu No Yaiba</p>
-            </div>
-          </a>
-
-          <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="https://i.postimg.cc/LX1c45bX/4e954b4dff8729bf4476d76d8185bce6.jpg" alt="portada de anime" data-genero="comedia" data-fecha="2017" data-emision="estreno" class="imagen comedia" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -127,7 +134,7 @@
 
 	  
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="https://i.postimg.cc/tC5L4L2h/Ataque-a-los-titanes-episodio-76-1.png" alt="portada de anime" data-genero="sobrenatural" data-fecha="2019" data-emision="emision" class="imagen sobrenatural" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -135,7 +142,8 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="https://i.postimg.cc/fyQ6VsGv/e0mt1575443976280-1.jpg
+            " alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -143,7 +151,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="https://i.postimg.cc/7YDFDxMH/f0dfabec20d9f3ce33add1a92d381c70.jpg" alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -151,7 +159,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -160,7 +168,7 @@
 
 	   
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -168,7 +176,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -176,7 +184,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -184,7 +192,7 @@
           </a>
 
           <a href="description.html" class="library-anime">
-            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" />
+            <img src="../img/kimetsu-no-yaiba.jpg" alt="portada de anime" data-genero="accion" data-fecha="2015" data-emision="emision" class="imagen accion" />
             <div class="library-anime-hover">
               <img src="../img/play-icono.png" alt="" />
               <p>Kimetsu No Yaiba</p>
@@ -217,5 +225,9 @@
       </div>
       <h2 class="footer-title">&copy; Derechos Reservados | Equipo 5</h2>
     </footer>
+
+    <!--las Siguiente linea es para ejecutar JS-->
+    <script src="../js/script.js"></script>
+    <script src="../js/descripcion.js"></script>
   </body>
 </html>
