@@ -5896,6 +5896,16 @@ fieldset:disabled .btn {
   overflow: hidden;
   margin: 0 auto;
 }
+
+.carousel-item img {
+  height: 100%;
+  max-width: none;
+  left: 120%;
+  position: relative;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+}
+
 .carousel-inner::after {
   display: block;
   clear: both;
@@ -5906,7 +5916,7 @@ fieldset:disabled .btn {
   position: relative;
   display: none;
   float: left;
-  width: 80%;
+  width: 60%;
   margin-right: -100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;

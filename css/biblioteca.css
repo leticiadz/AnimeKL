@@ -103,6 +103,7 @@ h1 {
   position: relative;
   margin-bottom: 10px;
 }
+
 .library-anime > img {
   object-fit: cover;
   height: auto;
