@@ -91,8 +91,23 @@ h1 {
   font-weight: 600;
 }
 
-.opc {
-  font-weight: 600;
+.filters-title {
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+.filters-dropdown {
+  background-color: rgb(148, 148, 148);
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 0.3rem;
+  border-radius: 0.5rem;
+}
+
+.filters-option:not(.filters-dropdown) {
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 0.5rem;
 }
 
 /*styling the library*/

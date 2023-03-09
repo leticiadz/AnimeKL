@@ -1,4 +1,5 @@
 // Creacion de variables para guardar la informacion del select del html de bilbioteca
+
 const generoSelect = document.getElementById("genero");
 const fechaSelect = document.getElementById("fecha");
 const emisionSelect = document.getElementById("emision");
