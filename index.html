@@ -32,39 +32,58 @@
 
 
   <!--Header-->
-  <header>
+  <header id="top">
     <a class="header-logo" href="index.html">
       <img src="./img/logo-anime.webp" alt="Logo AnimeKL" />
       <h2 class="header-page">AnimeKL</h2>
     </a>
     <nav>
-      <a class="nav-link" href="#modal-1">Login</a>
-      <article id="modal-1" class="modal">
-        <div class="modal-container">
-          <a href="#cerrar" class="modal-close">X</a>
-          <div class="modal-row">
-            <div class="modal-left modal-item">
-              <h2>Iniciar sesión</h2>
-              <form action="">
-                <input type="email" name="usuario" placeholder="email o usuario..."
-                  pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" id="">
-                <input type="text" name="contraseña" placeholder="contraseña...">
-                <button>Iniciar sesión</button>
+      <a class="nav-link" href="#modal-1" data-toggle="modal">Login</a>
+
+      <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Iniciar sesión</h5>
+              <a href="#cerrar" class="modal-close">X</a>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label class="usuario" for="usuario">Email o usuario:</label>
+                  <input type="email" class="form-control" id="usuario" placeholder="Ingresa tu email o usuario"
+                    required>
+                </div>
+                <br>
+
+                <div class="form-group">
+                  <label class="contraseña" for="contraseña">Contraseña:</label>
+                  <input type="password" class="form-control" id="contraseña" placeholder="Ingresa tu contraseña"
+                    required>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-danger">Iniciar sesión</button>
               </form>
               <a href="#" class="forget-password">¿Se te olvidó la contraseña?</a>
+              <br>
             </div>
-            <!--
-            <div class="modal-right modal-item">
-              <h2>BIENVENIDO</h2>
-            </div>-->
           </div>
         </div>
-      </article>
+      </div>
+
 
       <a class="nav-link" href="src/biblioteca.html">Animes</a>
       <a class="nav-link" href="src/biblioteca.html?categorias=emision">En emisión</a>
       <a class="nav-link" href="src/calendario.html">Calendario</a>
     </nav>
+    <!--Botón para regresar arriba-->
+    <a class="top-btn" href="#top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+        class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
+      </svg>
+    </a>
   </header>
 
   <!--Burger menu - Categories-->

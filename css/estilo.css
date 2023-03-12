@@ -56,7 +56,7 @@ html {
   text-decoration: none;
   line-height: 3rem;
   color: #fff;
-  background-color: #d00;
+  background-color: #dc3545;
   transition: background-color 300ms linear, transform 300ms ease-in-out;
 }
 
@@ -113,20 +113,18 @@ html {
   color: black;
 }
 
-.modal-left .forget-password {
+.modal-body .forget-password {
   width: 100%;
   color: black;
   font-size: 0.9rem;
   display: block;
   text-align: center;
   padding-top: 10px;
-  border-top: 1px solid rgba(15, 15, 15, 0.529);
 }
 
-.modal-left .forget-password:hover {
+.modal-body .forget-password:hover {
   background-color: transparent;
   color: #f03d33;
-  font-size: 1rem;
 }
 
 .modal-right h2 {
@@ -134,6 +132,11 @@ html {
   margin: 30%;
   border-top: 1px solid rgba(15, 15, 15, 0.44);
   border-bottom: 1px solid rgba(15, 15, 15, 0.44);
+}
+
+.usuario,
+.contraseña {
+  margin-bottom: 10px;
 }
 
 /*Font*/
@@ -284,6 +287,25 @@ nav a {
 
 nav a:hover {
   background-color: #f03c33c5;
+}
+
+/*Botón para volver arriba*/
+.top-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.top-btn svg {
+  width: inherit;
+  height: inherit;
+  font-size: inherit;
 }
 
 /*Carrousel*/
